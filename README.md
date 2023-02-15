@@ -5,7 +5,7 @@ TravelScope is a website application that features a list of information on tour
 - Description of tourist destinations;
 - Recommendations for locations visited in tourist destinations.
 
-The TravelScope members:
+## The TravelScope members:
 
 | Name | Roles |
 | ----------- | ----------- |
@@ -14,5 +14,7 @@ The TravelScope members:
 | Karim Hasibuan | `Front end developer` |
 | Arif Setiawan | `Front end developer` & `UI/UX Designer` |
 
-Figma Design:
+## Figma Design:
+[TravelScope](https://www.figma.com/file/DntDIGr23JZzRjjBflxBLH/TeavelScope?t=Pb42DRsHtENjDe0F-0)
 
+## Demo
