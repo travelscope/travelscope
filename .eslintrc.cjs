@@ -16,6 +16,11 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react", "@typescript-eslint"],
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
   rules: {
     indent: ["error", 2],
     "linebreak-style": ["error", "unix"],
