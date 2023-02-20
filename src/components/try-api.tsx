@@ -13,7 +13,7 @@ export function TryApi() {
       <h1>Try API</h1>
       {/* <pre>{JSON.stringify(destinations)}</pre> */}
 
-      <ul>
+      <ul className="flex gap-5">
         {destinations?.map((destination) => {
           return <li key={destination.id}>{destination.name}</li>;
         })}
