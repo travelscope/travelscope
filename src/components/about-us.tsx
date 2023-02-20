@@ -1,7 +1,7 @@
 export function AboutUs() {
   return (
     <section className="flex px-40 py-16 bg-teal-50">
-      <img src="src/images/about-us-img.png" alt="About Us" />
+      <img src="public/about-us-img.png" alt="About Us" />
       <div className="flex-col justify-start pl-2">
         <p className="font-semibold text-3xl text-green-800">About Us</p>
         <p className="font-bold text-4xl text-cyan-500">

@@ -1,6 +1,6 @@
 export function HomeSection() {
   return (
-    <section className="bg-[url('src/images/home-page-background.png')] bg-cover mt-16">
+    <section className="bg-[url('public/home-page-background.png')] bg-cover mt-16">
       <div className="flex flex-col items-center justify-center">
         <p className="font-semibold text-4xl text-green-800 mt-40">
           Let`s go find your favorite tourist spot with

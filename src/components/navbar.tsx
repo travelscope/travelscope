@@ -3,7 +3,7 @@ export function Navbar() {
     <section className="top-0 left-0 right-0 fixed h-16 bg-white">
       <nav className="flex justify-evenly content-center items-center">
         <a href="#">
-          <img src="src/images/header-logo.png" alt="Header Logo" />
+          <img src="public/header-logo.png" alt="Header Logo" />
         </a>
         <ul className="flex gap-20">
           <li className="font-bold text-base text-green-800 hover:text-cyan-500 ">
