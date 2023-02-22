@@ -18,7 +18,12 @@ export function DestinationIdRoute() {
 
   return (
     <div>
-      <h4 className="text-xl font-bold">{destination.name}</h4>
+      <div>
+        <h4 className="text-xl font-bold">{destination.name}</h4>
+        <div className="prose whitespace-pre-wrap">
+          {destination.description}
+        </div>
+      </div>
 
       <MapEmbed destination={destination} />
     </div>
