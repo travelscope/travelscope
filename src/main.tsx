@@ -12,6 +12,10 @@ import {
   ExampleMapboxRoute,
   loader as exampleMapboxLoader,
 } from "./routes/examples/mapbox";
+import {
+  DestinationIdRoute,
+  loader as desinationIdLoader,
+} from "./routes/destinations/destinationId";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +26,11 @@ const router = createBrowserRouter([
         path: "/",
         element: <HomeRoute />,
         loader: homeLoader,
+      },
+      {
+        path: "/destinations/:destinationId",
+        element: <DestinationIdRoute />,
+        loader: desinationIdLoader,
       },
       {
         path: "/examples/mapbox",

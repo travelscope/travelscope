@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ResourceDestination } from "../api/destinations";
 
 const formatToRupiah = (num: number): string => {
@@ -7,32 +8,37 @@ const formatToRupiah = (num: number): string => {
   }).format(num);
 };
 
-function Card(props: { destination: ResourceDestination }) {
+function Card({ destination }: { destination: ResourceDestination }) {
   return (
     <div className="bg-white shadow-xl hover:shadow-2xl rounded p-2 flex flex-col">
       <img
-        src={props.destination.image}
-        alt={"img-" + props.destination.name}
+        src={destination.image}
+        alt={"img-" + destination.name}
         className="rounded object-cover h-40 w-full"
       />
       <div className="mb-4">
         <h1 className="text-green-800 mt-5 font-medium text-lg">
-          {props.destination.name}
+          {destination.name}
         </h1>
         <p className="text-green-800 mt-5 h-36 overflow-auto">
-          {props.destination.shortDescription}
+          {destination.shortDescription}
         </p>
         <p className="text-slate-800 font-medium mt-4">
-          {formatToRupiah(props.destination.price)}
+          {formatToRupiah(destination.price)}
         </p>
       </div>
       <div className="flex justify-between flex-end">
-        <button className="bg-cyan-500 p-2.5 text-white rounded-lg hover:bg-cyan-700">
-          Add
-        </button>
-        <button className="bg-white border border-cyan-500 p-2.5 text-cyan-500 rounded-lg hover:bg-cyan-500 hover:text-white hover:border-white">
+        <form>
+          <button className="bg-cyan-500 p-2.5 text-white rounded-lg hover:bg-cyan-700">
+            Add
+          </button>
+        </form>
+        <Link
+          to={`/destinations/${destination.id}`}
+          className="bg-white border border-cyan-500 p-2.5 text-cyan-500 rounded-lg hover:bg-cyan-500 hover:text-white hover:border-white"
+        >
           Detail
-        </button>
+        </Link>
       </div>
     </div>
   );

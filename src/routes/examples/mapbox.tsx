@@ -2,6 +2,7 @@ import Map from "react-map-gl";
 import { useLoaderData } from "react-router-dom";
 
 import { apiGetDestinationById } from "../../api/destinations";
+import { MapEmbed } from "../../components/map-embed";
 
 const MAPBOX_API_ACCESS_TOKEN = import.meta.env.VITE_MAPBOX_API_ACCESS_TOKEN;
 
@@ -17,16 +18,7 @@ export function ExampleMapboxRoute() {
 
   return (
     <div className="z-0">
-      <Map
-        mapboxAccessToken={MAPBOX_API_ACCESS_TOKEN}
-        initialViewState={{
-          longitude: destination.longitude,
-          latitude: destination.latitude,
-          zoom: 13,
-        }}
-        style={{ width: 500, height: 500 }}
-        mapStyle="mapbox://styles/mapbox/streets-v9"
-      />
+      <MapEmbed destination={destination} />
     </div>
   );
 }
