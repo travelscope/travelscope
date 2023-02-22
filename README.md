@@ -5,19 +5,23 @@ TravelScope is a website application that features a list of information on tour
 - Description of tourist destinations;
 - Recommendations for locations visited in tourist destinations.
 
-## The TravelScope members:
+## Team Members
 
-| Name                     | Roles                                    |
-| ------------------------ | ---------------------------------------- |
-| Rofiq Ahmad              | `Front end developer`                    |
-| Muhammad Farkhan Syafi'i | `Front end developer`                    |
-| Karim Hasibuan           | `Front end developer`                    |
-| Arif Setiawan            | `Front end developer` & `UI/UX Designer` |
+| Name                     | Roles                                |
+| ------------------------ | ------------------------------------ |
+| Rofiq Ahmad              | Frontend developer                   |
+| Muhammad Farkhan Syafi'i | Frontend developer                   |
+| Karim Hasibuan           | Frontend developer                   |
+| Arif Setiawan            | Frontend developer &`UI/UX Designers |
 
-## Figma Design:
+## UI Design
 
-[TravelScope](https://www.figma.com/file/DntDIGr23JZzRjjBflxBLH/TeavelScope?t=Pb42DRsHtENjDe0F-0)
+Figma file: <https://figma.com/file/DntDIGr23JZzRjjBflxBLH/TeavelScope>
 
-## Demo
+## Live URLs
 
-[TravelScope](https://travelscopee.netlify.app/)
+- <https://travelscopee.netlify.app>
+- <https://travelscope.frarif.com>
+- <https://travelscope.rofiqahmad.com>
+- <https://travelscope.muhfarkhans.com>
+- <https://travelscope.karim.com>
