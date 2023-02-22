@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./index.css";
+import "mapbox-gl/dist/mapbox-gl.css";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HomeRoute, loader as homeLoader } from "./routes/home";
 import { RootRoute } from "./routes/root";
+
+import { ExampleMapboxRoute } from "./routes/examples/mapbox";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +19,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <HomeRoute />,
         loader: homeLoader,
+      },
+      {
+        path: "/examples/mapbox",
+        element: <ExampleMapboxRoute />,
       },
     ],
   },

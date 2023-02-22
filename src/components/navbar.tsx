@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function Navbar() {
   return (
-    <section className="top-0 left-0 right-0 fixed h-16 bg-white shadow-md">
+    <section className="top-0 left-0 right-0 fixed z-50 h-16 bg-white shadow-md">
       <nav className="flex justify-evenly content-center items-center">
         <Link to={"/"}>
           <img
