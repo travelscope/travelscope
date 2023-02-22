@@ -6,12 +6,16 @@ export type ResourceDestination = {
   updatedAt?: string;
 
   name: string;
-  city: string;
   description: string;
   shortDescription: string;
   image: string;
   price: number;
   rating: number;
+
+  city: string;
+  location?: string;
+  latitude?: number;
+  longitude?: number;
 };
 
 export type ResourceDestinations = ResourceDestination[];
