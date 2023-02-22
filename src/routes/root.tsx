@@ -1,36 +1,19 @@
-export default function Root() {
+import { HomeSection } from "../components/home-section";
+import { Navbar } from "../components/navbar";
+import ExploreSection from "../components/explore-section";
+import { AboutUs } from "../components/about-us";
+import { ContactUsSection } from "../components/contact-us-section";
+import { CopyRight } from "../components/copyright";
+
+export default function RootRoute() {
   return (
     <>
-      <div id="sidebar">
-        <h1>React Router Contacts</h1>
-        <div>
-          <form id="search-form" role="search">
-            <input
-              id="q"
-              aria-label="Search contacts"
-              placeholder="Search"
-              type="search"
-              name="q"
-            />
-            <div id="search-spinner" aria-hidden hidden={true} />
-            <div className="sr-only" aria-live="polite"></div>
-          </form>
-          <form method="post">
-            <button type="submit">New</button>
-          </form>
-        </div>
-        <nav>
-          <ul>
-            <li>
-              <a href={"/contacts/1"}>Your Name</a>
-            </li>
-            <li>
-              <a href={"/contacts/2"}>Your Friend</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div id="detail"></div>
+      <Navbar />
+      <HomeSection />
+      <AboutUs />
+      <ExploreSection />
+      <ContactUsSection />
+      <CopyRight />
     </>
   );
 }

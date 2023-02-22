@@ -12,7 +12,7 @@ function ExploreSection() {
   }, []);
 
   return (
-    <div className="container mx-auto max-w-5xl">
+    <div id="explore-section" className="container mx-auto max-w-5xl ">
       <p className="font-semibold text-3xl text-green-800 my-8">
         Explore your spot
       </p>
