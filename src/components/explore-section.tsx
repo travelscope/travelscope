@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+
 import RequestAPI from "../utils/requestapi";
 import Card from "./card";
 
-function ExploreSection() {
+export function ExploreSection() {
   const [destinations, setDestinations] = useState([]);
 
   useEffect(function () {
@@ -29,5 +30,3 @@ function ExploreSection() {
     </div>
   );
 }
-
-export default ExploreSection;
