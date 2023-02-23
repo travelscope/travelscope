@@ -1,6 +1,6 @@
 export function HomeSection() {
   return (
-    <section className="bg-[url('https://ik.imagekit.io/travelscopee/home-page-background.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676903839857')] bg-cover">
+    <section className="bg-[url('https://ik.imagekit.io/travelscopee/home-page-background.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676903839857')] bg-cover mt-16">
       <div className="flex flex-col items-center justify-center">
         <p className="font-semibold text-4xl text-green-800 mt-40">
           Let`s go find your favorite tourist spot with

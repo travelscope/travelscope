@@ -8,10 +8,10 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import { HomeRoute, loader as homeLoader } from "./routes/home";
 import { RootRoute } from "./routes/root";
 
-import {
-  ExampleMapboxRoute,
-  loader as exampleMapboxLoader,
-} from "./routes/examples/mapbox";
+// import {
+//   ExampleMapboxRoute,
+//   loader as exampleMapboxLoader,
+// } from "./routes/examples/mapbox";
 import {
   DestinationIdRoute,
   loader as desinationIdLoader,
@@ -32,11 +32,11 @@ const router = createBrowserRouter([
         element: <DestinationIdRoute />,
         loader: desinationIdLoader,
       },
-      {
-        path: "/examples/mapbox",
-        element: <ExampleMapboxRoute />,
-        loader: exampleMapboxLoader,
-      },
+      // {
+      //   path: "/examples/mapbox",
+      //   element: <ExampleMapboxRoute />,
+      //   loader: exampleMapboxLoader,
+      // },
     ],
   },
 ]);

@@ -10,17 +10,14 @@ export function AboutUs() {
         <p className="font-bold text-4xl text-cyan-500">
           Most popular travel list in catamyst batch 2
         </p>
-        <p className="font-medium text-xl text-green-800 mt-8">
-          Lorem ipsum dolor sit amet consectetur. Sed hac lorem nisl at. Nullam
-          sed at odio praesent. Fermentum elementum facilisis ante nam fermentum
-          pulvinar. Quis at amet viverra tincidunt id semper viverra quisque
-          gravida.
+        <p className="font-medium text-xl text-green-800 mt-8 ">
+          We are a travel platform that aims to provide the best tourist spots
+          for travelers in Indonesia. We provide a list of the best prices for
+          travel so that you can adjust to the budget you have..
         </p>
-        <p className="font-medium text-xl text-green-800 mt-7">
-          Lorem ipsum dolor sit amet consectetur. Sed hac lorem nisl at. Nullam
-          sed at odio praesent. Fermentum elementum facilisis ante nam fermentum
-          pulvinar. Quis at amet viverra tincidunt id semper viverra quisque
-          gravida.
+        <p className="font-medium text-xl text-green-800 mt-8 ">
+          We are committed to providing a high quality service and an
+          unforgettable experience for each of our customers.
         </p>
         <button className="bg-cyan-500 p-2.5 text-white mt-4 rounded-lg hover:bg-cyan-700">
           Read More
