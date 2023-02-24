@@ -30,7 +30,7 @@ function Card({ destination }: { destination: ResourceDestination }) {
       <div className="flex justify-between flex-end">
         <form>
           <button className="bg-cyan-500 p-2.5 text-white rounded-lg hover:bg-cyan-700">
-            Add
+            Favorite
           </button>
         </form>
         <Link

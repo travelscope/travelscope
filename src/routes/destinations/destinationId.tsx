@@ -35,15 +35,17 @@ export function DestinationIdRoute() {
         </h4>
         <div className="prose whitespace-pre-wrap text-sm text-green-800 text-justify">
           {destination.description}
+        </div>{" "}
+        <div className="flex justify-between">
+          <p className="text-m font-medium mt-4">
+            {formatToRupiah(destination.price)}
+          </p>
+          <form>
+            <button className="bg-cyan-500 py-2.5 px-5 text-white rounded-lg hover:bg-cyan-700 mt-2">
+              Favorite
+            </button>
+          </form>
         </div>
-        <p className="text-m font-medium mt-4">
-          {formatToRupiah(destination.price)}
-        </p>
-        <form>
-          <button className="bg-cyan-500 py-2.5 px-5 text-white rounded-lg hover:bg-cyan-700 mt-2">
-            Add
-          </button>
-        </form>
       </div>
 
       <MapEmbed destination={destination} />

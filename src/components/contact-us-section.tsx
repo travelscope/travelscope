@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function ContactUsSection() {
   return (
-    <section className="flex flex-wrap py-10 px-40 justify-between bg-teal-50">
+    <section className="flex flex-wrap py-10 px-40 justify-between bg-teal-100">
       <div>
         <img src="/footer-logo.png" alt="Footer Logo" />
         <p className="text-base text-green-800">

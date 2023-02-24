@@ -1,6 +1,6 @@
 export function AboutUs() {
   return (
-    <section className="flex px-40 py-16 bg-teal-50">
+    <section className="flex px-40 py-16 bg-teal-100">
       <img
         src="https://ik.imagekit.io/travelscopee/about-us-img.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676904256683"
         alt="About Us"
