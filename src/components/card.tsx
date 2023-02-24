@@ -26,7 +26,7 @@ function Card({ destination }: { destination: ResourceDestination }) {
         </p>
         <div className="mt-4">
           <StarRatings
-            rating={3}
+            rating={destination.rating}
             starRatedColor="yellow"
             starDimension="20px"
             starSpacing="5px"
