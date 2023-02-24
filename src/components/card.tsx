@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ResourceDestination } from "../api/destinations";
+import StarRatings from "react-star-ratings";
 
 const formatToRupiah = (num: number): string => {
   return new Intl.NumberFormat("id-ID", {
@@ -17,13 +18,23 @@ function Card({ destination }: { destination: ResourceDestination }) {
         className="rounded object-cover h-40 w-full"
       />
       <div className="mb-4">
-        <h1 className="text-green-800 mt-5 font-medium text-lg">
+        <h1 className="text-green-800 mt-5 font-semibold text-lg tracking-wide">
           {destination.name}
         </h1>
-        <p className="text-green-800 mt-5 h-36 overflow-auto">
+        <p className="text-green-800 mt-5 h-36 overflow-auto tracking-wider">
           {destination.shortDescription}
         </p>
-        <p className="text-slate-800 font-medium mt-4">
+        <div className="mt-4">
+          <StarRatings
+            rating={3}
+            starRatedColor="yellow"
+            starDimension="20px"
+            starSpacing="5px"
+            numberOfStars={5}
+            name="rating"
+          />
+        </div>
+        <p className="text-slate-800 font-semibold text-lg tracking-wide mt-4">
           {formatToRupiah(destination.price)}
         </p>
       </div>
