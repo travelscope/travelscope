@@ -5,8 +5,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 
-import { HomeRoute, loader as homeLoader } from "./routes/home";
 import { RootRoute } from "./routes/root";
+import { HomeRoute, loader as homeLoader } from "./routes/home";
+import { ExploreRoute, loader as exploreLoader } from "./routes/explore";
 
 // import {
 //   ExampleMapboxRoute,
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
         path: "/",
         element: <HomeRoute />,
         loader: homeLoader,
+      },
+      {
+        path: "/explore",
+        element: <ExploreRoute />,
+        loader: exploreLoader,
       },
       {
         path: "/destinations/:destinationId",

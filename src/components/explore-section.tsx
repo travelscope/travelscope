@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ResourceDestinations } from "../api/destinations";
 import Card from "./card";
 
@@ -13,9 +14,11 @@ export function ExploreSection(props: { destinations: ResourceDestinations }) {
         })}
       </div>
       <div className="flex justify-center mb-8">
-        <button className="bg-cyan-500 p-2.5 font-semibold text-white mt-4 rounded-lg hover:bg-cyan-700">
-          See More
-        </button>
+        <Link to={"/explore"}>
+          <button className="bg-cyan-500 p-2.5 font-semibold text-white mt-4 rounded-lg hover:bg-cyan-700">
+            See More
+          </button>
+        </Link>
       </div>
     </div>
   );

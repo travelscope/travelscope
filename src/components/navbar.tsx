@@ -18,7 +18,7 @@ export function Navbar() {
             <Link to={"/about-us"}>ABOUT US</Link>
           </li>
           <li className="font-bold text-base text-green-800 hover:text-cyan-500 ">
-            <Link to={"/explore-section"}>EXPLORE</Link>
+            <Link to={"/explore"}>EXPLORE</Link>
           </li>
           <li className="font-bold text-base text-green-800 hover:text-cyan-500 ">
             <Link to={"/contact-us"}></Link> CONTACT US
