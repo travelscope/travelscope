@@ -23,17 +23,17 @@ export function DestinationIdRoute() {
   }
 
   return (
-    <div className="flex justify-evenly mt-16">
+    <div className="flex items-start justify-between mt-16">
       <div className="p-5">
         <img
           src={destination.image}
           alt={"img-" + destination.name}
-          className="rounded object-cover h-1/4 w-full"
+          className="rounded object-cover h-52 w-full"
         />
         <h4 className="font-semibold text-green-800 text-xl mb-2 mt-2">
           {destination.name}
         </h4>
-        <div className="prose whitespace-pre-wrap text-sm text-green-800">
+        <div className="prose whitespace-pre-wrap text-sm text-green-800 text-justify">
           {destination.description}
         </div>
         <p className="text-m font-medium mt-4">

@@ -17,7 +17,7 @@ export function MapEmbed({
         latitude: destination.latitude,
         zoom: 13,
       }}
-      style={{ width: 1000, height: 1000 }}
+      style={{ width: 800, height: 700 }}
       mapStyle="mapbox://styles/mapbox/streets-v9"
     />
   );
