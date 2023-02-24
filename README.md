@@ -3,7 +3,7 @@
 TravelScope is a website application that features a list of information on tourist destinations in Indonesia. the information provided includes:
 
 - Description of tourist destinations;
-- Costs/price required to travel to the destination;
+- Costs/price required to travel to the destinations;
 - Destination ratings;
 - Destination location;
 - Destination images;
