@@ -21,7 +21,7 @@ function Card({ destination }: { destination: ResourceDestination }) {
         <h1 className="text-green-800 mt-5 font-semibold text-lg tracking-wide">
           {destination.name}
         </h1>
-        <p className="text-green-800 mt-5 h-36 overflow-auto tracking-wider">
+        <p className="text-green-800 mt-5 text-sm h-36 overflow-auto tracking-wider">
           {destination.shortDescription}
         </p>
         <div className="mt-4">
