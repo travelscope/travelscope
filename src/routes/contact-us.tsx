@@ -33,7 +33,7 @@ export function ContactUsRoute() {
             <p className="max-w-sm font-bold">travelscope21@gmail.com</p>
           </aside>
           <aside className="space-y-2">
-            <p className="space-y-4 text-lg font-bold leading-relaxed">
+            <p className="space-y-4 text-2xl font-bold leading-relaxed">
               Office Location
             </p>
             <img
