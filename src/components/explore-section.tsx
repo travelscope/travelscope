@@ -16,7 +16,7 @@ export function ExploreSection(props: { destinations: ResourceDestinations }) {
       <div className="mb-8 flex justify-center">
         <Link to={"/explore"}>
           <button className="mt-4 rounded-lg bg-cyan-500 p-2.5 font-semibold text-white hover:bg-cyan-700">
-            Expore More Places
+            Explore More Places
           </button>
         </Link>
       </div>
