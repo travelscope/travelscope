@@ -26,7 +26,7 @@ export function ContactUsRoute() {
             Jl. BSD Grand Boulevard Jl. BSD Green Office Park No.Kel, Sampora,
             Kec. Cisauk, Kabupaten Tangerang, Banten
           </p>
-          <p className="max-w-sm pl-14">0812-6666-6666</p>
+          <p className="max-w-sm pl-14">+62-812-3456-7890</p>
           <p className="max-w-sm pl-14">travelscope21@gmail.com</p>
         </div>
         <div className="pr-14">
