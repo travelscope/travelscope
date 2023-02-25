@@ -10,7 +10,7 @@ export function AboutUs() {
       />
       <div className="mt-10 flex flex-col md:mt-0 md:pl-8">
         <p className="text-3xl font-semibold text-green-800">About Us</p>
-        <p className="text-4xl font-bold capitalize tracking-wider text-cyan-500">
+        <p className="text-4xl font-bold capitalize text-cyan-500">
           Most popular travel list
         </p>
         <p className="mt-8 text-xl font-medium text-green-800 ">

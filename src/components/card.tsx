@@ -12,10 +12,10 @@ function Card({ destination }: { destination: ResourceDestination }) {
         className="h-40 w-full rounded object-cover"
       />
       <div className="mb-4">
-        <h1 className="mt-5 text-lg font-semibold tracking-wide text-green-800">
+        <h1 className="mt-5 text-lg font-semibold  text-green-800">
           {destination.name}
         </h1>
-        <p className="mt-5 h-36 overflow-auto text-sm tracking-wider text-green-800">
+        <p className="mt-5 h-36 overflow-auto text-sm  text-green-800">
           {destination.shortDescription}
         </p>
         <div className="mt-4">
@@ -28,7 +28,7 @@ function Card({ destination }: { destination: ResourceDestination }) {
             name="rating"
           />
         </div>
-        <p className="mt-4 text-lg font-semibold tracking-wide text-slate-800">
+        <p className="mt-4 text-lg font-semibold  text-slate-800">
           {formatToRupiah(destination.price)}
         </p>
       </div>
