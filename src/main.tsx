@@ -19,6 +19,7 @@ import {
 } from "./routes/destinations/destinationId";
 import { SearchRoute, loader as searchLoader } from "./routes/search";
 import { AboutUsRoute } from "./routes/about-us";
+import { ContactUsRoute } from "./components/contact-us";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/about-us",
         element: <AboutUsRoute />,
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUsRoute />,
       },
     ],
   },
