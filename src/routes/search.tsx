@@ -15,15 +15,26 @@ export function SearchRoute() {
   >;
 
   return (
-    <div className="ml-10">
-      <header className="mb-10 pt-5">
-        <h1>Search results</h1>
+    <div className="ml-10 mr-10">
+      <header className="mb-5 pt-5 ">
+        <h1 className="text-xl font-semibold text-green-800">Search results</h1>
       </header>
 
       {destinations.map((destination) => {
         return (
-          <div key={destination.id}>
-            <h1>{destination.name}</h1>
+          <div className="border p-3" key={destination.id}>
+            {" "}
+            <img
+              src={destination.image}
+              alt={"img-" + destination.name}
+              className="h-24 w-24 rounded object-cover"
+            />
+            <h1 className="mt-2 text-base font-medium text-green-800">
+              {destination.name}
+            </h1>
+            <p className="mt-2 overflow-auto text-sm  text-green-800">
+              {destination.shortDescription}
+            </p>
           </div>
         );
       })}
