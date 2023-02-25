@@ -22,8 +22,12 @@ export type ResourceDestinations = ResourceDestination[];
 
 export async function apiGetDestinations() {
   const response = await axiosInstance.get("/destinations");
-  const destinations: ResourceDestinations = response.data;
-  return destinations;
+  return response.data as ResourceDestinations;
+}
+
+export async function apiSearchDestinations(q: string) {
+  const response = await axiosInstance.get(`/destinations/search?q=${q}`);
+  return response.data as ResourceDestinations;
 }
 
 export async function apiGetDestinationById(
