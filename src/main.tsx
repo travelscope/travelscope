@@ -19,7 +19,7 @@ import {
 } from "./routes/destinations/destinationId";
 import { SearchRoute, loader as searchLoader } from "./routes/search";
 import { AboutUsRoute } from "./routes/about-us";
-import { ContactUsRoute } from "./components/contact-us";
+import { ContactUsRoute } from "./routes/contact-us";
 
 const router = createBrowserRouter([
   {
