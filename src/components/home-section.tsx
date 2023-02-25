@@ -9,13 +9,22 @@ export function HomeSection() {
         <p className="text-xl text-green-800 mt-5">
           We are here to make your nice travel journey
         </p>
-        <form className="flex mt-8 mb-64" id="search">
+        <form
+          method="get"
+          action="/search"
+          className="flex mt-8 mb-64"
+          id="search"
+        >
           <input
+            name="q"
             type="search"
             placeholder="Find your spot"
-            className="pl-2.5 py-5 pr-80 bg-slate-100 rounded-l-lg focus:outline-none"
+            className="pl-2.5 py-5 bg-slate-100 rounded-l-lg focus:outline-none"
           />{" "}
-          <button className="py-2 px-7  bg-cyan-500 rounded-r-lg font-semibold text-white text-base  hover:bg-cyan-700">
+          <button
+            type="submit"
+            className="py-2 px-7  bg-cyan-500 rounded-r-lg font-semibold text-white text-base  hover:bg-cyan-700"
+          >
             Search
           </button>
         </form>
