@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .contact-us-cover {
+    background-image: url(https://ik.imagekit.io/tvlk/image/imageResource/2022/12/01/1669915186434-36ef1b2….png?tr=q-75),
+      linear-gradient(360deg, #f3f4f7 13.03%, rgba(255, 255, 255, 0) 100%);
+    background-attachment: fixed, fixed;
+    background-position: top center, bottom center;
+    background-repeat: no-repeat, repeat;
+  }
+}
