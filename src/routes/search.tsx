@@ -1,8 +1,11 @@
 import { useLoaderData } from "react-router-dom";
 import { apiSearchDestinations } from "../api/destinations";
 
-export async function loader() {
-  const destinations = await apiSearchDestinations("java");
+export async function loader({ request }: any) {
+  const url = new URL(request.url);
+  const q = String(url.searchParams.get("q"));
+
+  const destinations = await apiSearchDestinations(q);
   return { destinations };
 }
 
@@ -12,7 +15,7 @@ export function SearchRoute() {
   >;
 
   return (
-    <div>
+    <div className="ml-10">
       <header className="mb-10">
         <h1>Search results</h1>
       </header>
