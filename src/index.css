@@ -6,9 +6,8 @@
 
 @layer components {
   .contact-us-cover {
-    background-image: url(https://ik.imagekit.io/tvlk/image/imageResource/2022/12/01/1669915186434-36ef1b2….png?tr=q-75);
-    background-attachment: fixed, fixed;
-    background-position: top center, bottom center;
-    background-repeat: no-repeat, repeat;
+    background-image: url("/contact-us-cover.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 }
