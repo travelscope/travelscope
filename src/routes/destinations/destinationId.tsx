@@ -24,14 +24,14 @@ export function DestinationIdRoute() {
           alt={"img-" + destination.name}
           className="h-52 w-full rounded object-cover"
         />
-        <h1 className="mt-5 text-xl font-semibold tracking-wide text-green-800">
+        <h1 className="mt-5 text-xl font-semibold  text-green-800">
           {destination.name}
         </h1>
-        <h2 className="text-medium mb-3 font-semibold tracking-wide text-green-600">
-          {destination.city}{" "}
+        <h2 className="text-medium mb-3 font-semibold  text-green-600">
+          <span>{destination.city}, </span>
           <span className="text-green-500">{destination.location}</span>
         </h2>
-        <div className="prose whitespace-pre-wrap text-justify text-sm tracking-wider text-green-800">
+        <div className="prose whitespace-pre-wrap text-justify text-sm  text-green-800">
           {destination.description}
         </div>
         <div className="mt-4">
@@ -45,12 +45,12 @@ export function DestinationIdRoute() {
           />
         </div>
         <div className="flex justify-between">
-          <p className="mt-4 text-lg font-semibold tracking-wide text-slate-800">
+          <p className="mt-4 text-lg font-semibold  text-slate-800">
             {formatToRupiah(destination.price)}
           </p>
           <form>
-            <button className="mt-2 rounded-lg bg-cyan-500 py-2.5 px-5 text-white hover:bg-cyan-700">
-              Favorite
+            <button className="rounded-lg bg-white p-2.5 text-red-500 hover:border-white hover:bg-red-500 hover:text-white">
+              ♡
             </button>
           </form>
         </div>
