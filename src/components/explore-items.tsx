@@ -3,7 +3,7 @@ import Card from "./card";
 
 export function ExploreItems(props: { destinations: ResourceDestinations }) {
   return (
-    <div id="explore-section" className="container mx-auto max-w-5xl mt-20">
+    <div id="explore-section" className="container mx-auto max-w-5xl">
       <p className="font-semibold text-center text-3xl text-green-800 my-8">
         Explore your spot
       </p>

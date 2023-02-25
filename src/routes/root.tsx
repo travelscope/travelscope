@@ -5,14 +5,16 @@ import { ContactUsSection } from "../components/contact-us-section";
 
 export function RootRoute() {
   return (
-    <>
+    <div className="flex min-h-screen flex-col">
       <Navbar />
 
-      <Outlet />
+      <main className="mt-20 flex-[1]">
+        <Outlet />
+      </main>
 
-      <ContactUsSection />
-
-      <CopyRight />
-    </>
+      <footer>
+        <ContactUsSection />
+      </footer>
+    </div>
   );
 }

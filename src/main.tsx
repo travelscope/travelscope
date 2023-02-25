@@ -17,6 +17,7 @@ import {
   DestinationIdRoute,
   loader as desinationIdLoader,
 } from "./routes/destinations/destinationId";
+import { SearchRoute, loader as searchLoader } from "./routes/search";
 
 const router = createBrowserRouter([
   {
@@ -38,11 +39,11 @@ const router = createBrowserRouter([
         element: <DestinationIdRoute />,
         loader: desinationIdLoader,
       },
-      // {
-      //   path: "/examples/mapbox",
-      //   element: <ExampleMapboxRoute />,
-      //   loader: exampleMapboxLoader,
-      // },
+      {
+        path: "/search",
+        element: <SearchRoute />,
+        loader: searchLoader,
+      },
     ],
   },
 ]);
