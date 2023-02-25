@@ -22,10 +22,11 @@ export function AboutUs() {
           We are committed to providing a high quality service and an
           unforgettable experience for each of our customers.
         </p>
-        <Link to={"/about-us"}>
-          <button className="bg-cyan-500 p-2.5 font-semibold text-white mt-4 rounded-lg hover:bg-cyan-700">
-            Read More
-          </button>
+        <Link
+          to={"/about-us"}
+          className="bg-cyan-500 p-2.5 font-semibold text-white mt-4 rounded-lg hover:bg-cyan-700"
+        >
+          Read More
         </Link>
       </div>
     </section>
