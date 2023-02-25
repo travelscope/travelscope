@@ -2,29 +2,29 @@ import { Link } from "react-router-dom";
 
 export function AboutUs() {
   return (
-    <section className="flex flex-col px-4 md:flex-row md:px-24 py-16 bg-teal-100">
+    <section className="flex flex-col bg-teal-100 px-4 py-16 md:flex-row md:px-24">
       <img
-        className="sm:w-full object-cover"
+        className="object-cover sm:w-full"
         src="https://ik.imagekit.io/travelscopee/about-us-img.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676904256683"
         alt="About Us"
       />
-      <div className="flex flex-col text-center md:text-left md:pl-8 mt-10 md:mt-0">
-        <p className="font-semibold text-3xl text-green-800">About Us</p>
-        <p className="font-bold text-4xl text-cyan-500 tracking-wider capitalize">
+      <div className="mt-10 flex flex-col md:mt-0 md:pl-8">
+        <p className="text-3xl font-semibold text-green-800">About Us</p>
+        <p className="text-4xl font-bold capitalize tracking-wider text-cyan-500">
           Most popular travel list
         </p>
-        <p className="font-medium text-xl text-green-800 mt-8 tracking-widest">
+        <p className="mt-8 text-xl font-medium text-green-800 ">
           We are a travel platform that aims to provide the best tourist spots
           for travelers in Indonesia. We provide a list of the best prices for
           travel so that you can adjust to the budget you have..
         </p>
-        <p className="font-medium text-xl text-green-800 mt-8 tracking-widest">
+        <p className="mt-8 text-xl font-medium text-green-800 ">
           We are committed to providing a high quality service and an
           unforgettable experience for each of our customers.
         </p>
         <Link
           to={"/about-us"}
-          className="bg-cyan-500 p-2.5 font-semibold text-white mt-4 rounded-lg hover:bg-cyan-700"
+          className="mt-4 rounded-lg bg-cyan-500 p-2.5 font-semibold text-white hover:bg-cyan-700"
         >
           Read More
         </Link>
