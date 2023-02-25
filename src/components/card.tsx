@@ -12,7 +12,7 @@ function Card({ destination }: { destination: ResourceDestination }) {
         className="h-40 w-full rounded object-cover"
       />
       <div className="mb-4">
-        <h1 className="mt-5 text-lg font-semibold  text-green-800">
+        <h1 className="mt-5 text-xl font-semibold  text-green-800">
           {destination.name}
         </h1>
         <p className="mt-5 h-36 overflow-auto text-sm  text-green-800">

@@ -3,10 +3,15 @@ export function AboutUsRoute() {
     <div id="explore-section" className="space-y-20">
       <header className="flex items-center justify-between bg-blue-400 py-40 px-5">
         <div className="mx-auto flex max-w-5xl items-center justify-between">
-          <h1 className="max-w-sm text-2xl text-white">
-            Explore thousands of options to enjoy life with TravelScope
+          <h1 className="max-w-sm text-3xl leading-relaxed text-white">
+            <span>Explore thousands of options to enjoy life with </span>
+            <span className="font-bold">TravelScope</span>
           </h1>
-          <img src="/about-us-hero.webp" alt="about us hero" />
+          <img
+            className="max-w-lg"
+            src="/about-us-hero.webp"
+            alt="about us hero"
+          />
         </div>
       </header>
 
