@@ -17,8 +17,8 @@ export function HomeRoute() {
   return (
     <>
       <HomeSection />
-      <AboutUs />
       <ExploreSection destinations={destinations} />
+      <AboutUs />
     </>
   );
 }
