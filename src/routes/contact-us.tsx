@@ -17,7 +17,15 @@ export function ContactUsRoute() {
         </div>
       </header>
 
-      <div></div>
+      <div className="bg-teal-100 py-2.5">
+        <h2 className="leading realxed max-w-sm font-bold">Cuntomer Cervice</h2>
+        <p className="max-w-sm">
+          Jl. BSD Grand Boulevard Jl. BSD Green Office Park No.Kel, Sampora,
+          Kec. Cisauk, Kabupaten Tangerang, Banten
+        </p>
+        <p className="max-w-sm">0812-6666-6666</p>
+        <p>travelscope21@gmail.com</p>
+      </div>
     </div>
   );
 }
