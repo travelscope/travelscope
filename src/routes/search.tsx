@@ -1,43 +1,33 @@
 import { useLoaderData } from "react-router-dom";
 import { apiSearchDestinations } from "../api/destinations";
+import Card from "../components/card";
 
 export async function loader({ request }: any) {
   const url = new URL(request.url);
   const q = String(url.searchParams.get("q"));
 
   const destinations = await apiSearchDestinations(q);
-  return { destinations };
+  return { destinations, q };
 }
 
 export function SearchRoute() {
-  const { destinations } = useLoaderData() as Awaited<
+  const { destinations, q } = useLoaderData() as Awaited<
     ReturnType<typeof loader>
   >;
 
   return (
     <div className="ml-10 mr-10">
       <header className="mb-5 pt-5 ">
-        <h1 className="text-xl font-semibold text-green-800">Search results</h1>
+        <h1 className="text-xl font-semibold text-green-800">
+          Search results for "{q}"
+        </h1>
       </header>
 
-      {destinations.map((destination) => {
-        return (
-          <div className="border p-3" key={destination.id}>
-            {" "}
-            <img
-              src={destination.image}
-              alt={"img-" + destination.name}
-              className="h-24 w-24 rounded object-cover"
-            />
-            <h1 className="mt-2 text-base font-medium text-green-800">
-              {destination.name}
-            </h1>
-            <p className="mt-2 overflow-auto text-sm  text-green-800">
-              {destination.shortDescription}
-            </p>
-          </div>
-        );
-      })}
+      <div className="mb-8 grid grid-cols-1 gap-4 px-2 sm:grid-cols-2 md:grid-cols-4 md:px-0">
+        {destinations.map((destination, index) => {
+          return <Card key={index} destination={destination} />;
+        })}
+      </div>
     </div>
   );
 }
