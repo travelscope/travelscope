@@ -18,6 +18,7 @@ import {
   loader as desinationIdLoader,
 } from "./routes/destinations/destinationId";
 import { SearchRoute, loader as searchLoader } from "./routes/search";
+import { AboutUsRoute } from "./routes/about-us";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
         path: "/search",
         element: <SearchRoute />,
         loader: searchLoader,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUsRoute />,
       },
     ],
   },
