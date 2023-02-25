@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 export function AboutUs() {
   return (
-    <section className="flex flex-col md:flex-row px-4 md:px-40 py-16 bg-teal-100">
+    <section className="flex flex-col px-4 md:flex-row md:px-24 py-16 bg-teal-100">
       <img
-        className="w-full object-cover"
+        className="sm:w-full object-cover"
         src="https://ik.imagekit.io/travelscopee/about-us-img.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676904256683"
         alt="About Us"
       />

@@ -4,7 +4,7 @@ import Card from "./card";
 
 export function ExploreSection(props: { destinations: ResourceDestinations }) {
   return (
-    <div id="explore-section" className="container mx-auto max-w-5xl ">
+    <div id="explore-section" className="container sm:mx-auto max-w-5xl">
       <p className="font-semibold text-3xl text-green-800 my-8">
         Explore your spot
       </p>

@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { ScrollRestoration, useLoaderData } from "react-router-dom";
 import { apiGetDestinations } from "../api/destinations";
 import { ExploreItems } from "../components/explore-items";
 
@@ -14,6 +14,7 @@ export function ExploreRoute() {
 
   return (
     <>
+      <ScrollRestoration />
       <ExploreItems destinations={destinations} />
     </>
   );

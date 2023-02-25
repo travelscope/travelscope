@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 export function Navbar() {
   return (
     <section className="top-0 left-0 right-0 h-16 bg-white shadow-md z-50 fixed">
-      <nav className="flex justify-evenly content-center items-center">
+      <nav className="flex px-10 justify-center sm:justify-between content-center items-center">
         <Link to={"/"}>
           <img
             src="https://ik.imagekit.io/travelscopee/header-logo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676904256956"
             alt="Header Logo"
           />
         </Link>
-        <ul className="flex gap-20">
+        <ul className="hidden  sm:flex gap-16">
           <li className="font-bold text-base text-green-800 hover:text-cyan-500 ">
             <Link to={"/"}>HOME</Link>
           </li>
@@ -24,9 +24,6 @@ export function Navbar() {
             <Link to={"/contact-us"}></Link> CONTACT US
           </li>
         </ul>
-        <button className="p-2.5 bg-cyan-500 text-white border rounded-lg hover:bg-cyan-700">
-          SIGN UP
-        </button>
       </nav>
     </section>
   );

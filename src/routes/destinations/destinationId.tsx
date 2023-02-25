@@ -17,7 +17,7 @@ export function DestinationIdRoute() {
   }
 
   return (
-    <div className="flex flex-col md:flex-row items-start justify-between mt-16">
+    <div className="flex flex-col md:flex-row items-start justify-between">
       <div className="p-5">
         <img
           src={destination.image}

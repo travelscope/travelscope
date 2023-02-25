@@ -16,7 +16,7 @@ export function SearchRoute() {
 
   return (
     <div className="ml-10">
-      <header className="mb-10">
+      <header className="mb-10 pt-5">
         <h1>Search results</h1>
       </header>
 
