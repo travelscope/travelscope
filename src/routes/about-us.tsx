@@ -1,9 +1,9 @@
 export function AboutUsRoute() {
   return (
     <div id="explore-section" className="space-y-20">
-      <header className="bg-blue-400 py-40 flex justify-between items-center px-5">
-        <div className="flex justify-between items-center max-w-5xl mx-auto">
-          <h1 className="text-white text-2xl max-w-sm">
+      <header className="flex items-center justify-between bg-blue-400 py-40 px-5">
+        <div className="mx-auto flex max-w-5xl items-center justify-between">
+          <h1 className="max-w-sm text-2xl text-white">
             Explore thousands of options to enjoy life with TravelScope
           </h1>
           <img src="/about-us-hero.webp" alt="about us hero" />
@@ -12,17 +12,17 @@ export function AboutUsRoute() {
 
       <section className="p-10">
         <h2 className="text-center leading-loose">
-          <span className="font-bold text-5xl">TravelScope</span>
+          <span className="text-5xl font-bold">TravelScope</span>
           <br />
           <span className="text-3xl">Life, Your Way</span>
         </h2>
       </section>
 
-      <section className="flex justify-between max-w-5xl mx-auto items-center">
+      <section className="mx-auto flex max-w-5xl items-center justify-between">
         <div>
           <img src="/about-us-travel.webp" alt="about us travel" />
         </div>
-        <div className="space-y-4 max-w-lg">
+        <div className="max-w-lg space-y-4">
           <p>
             TravelScope is Southeast Asia’s travel and lifestyle app, we provide
             you with access to discover and purchase different type of travel
@@ -44,8 +44,8 @@ export function AboutUsRoute() {
         </div>
       </section>
 
-      <section className="flex justify-between max-w-5xl mx-auto">
-        <div className="space-y-4 max-w-lg">
+      <section className="mx-auto flex max-w-5xl justify-between">
+        <div className="max-w-lg space-y-4">
           <p>
             TravelScope believes that happiness may come in many forms for
             different people in different occassion. Therefore, with our
