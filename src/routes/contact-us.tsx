@@ -20,8 +20,8 @@ export function ContactUsRoute() {
       </header>
 
       <section className="bg-teal-100 py-10">
-        <div className="mx-auto flex max-w-5xl items-center justify-between">
-          <aside className="max-w-lg space-y-4">
+        <div className="mx-auto flex max-w-5xl items-start justify-between">
+          <aside className="max-w-lg space-y-2">
             <h2 className="leading relaxed max-w-sm text-2xl font-bold">
               Customer Service
             </h2>
@@ -32,8 +32,8 @@ export function ContactUsRoute() {
             <p className="max-w-sm font-bold">+62-812-3456-7890</p>
             <p className="max-w-sm font-bold">travelscope21@gmail.com</p>
           </aside>
-          <aside className="space-y-2">
-            <p className="space-y-4 text-2xl font-bold leading-relaxed">
+          <aside className="mx-w-lg space-y-2">
+            <p className="text-2xl font-bold leading-relaxed">
               Office Location
             </p>
             <img
