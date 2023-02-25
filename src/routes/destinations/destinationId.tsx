@@ -17,27 +17,27 @@ export function DestinationIdRoute() {
   }
 
   return (
-    <div className="flex flex-col md:flex-row items-start justify-between">
+    <div className="flex flex-col items-start justify-between md:flex-row">
       <div className="p-5">
         <img
           src={destination.image}
           alt={"img-" + destination.name}
-          className="rounded object-cover h-52 w-full"
+          className="h-52 w-full rounded object-cover"
         />
-        <h1 className="text-green-800 mt-5 font-semibold text-xl tracking-wide">
+        <h1 className="mt-5 text-xl font-semibold tracking-wide text-green-800">
           {destination.name}
         </h1>
-        <h2 className="text-green-600 mb-3 font-semibold text-medium tracking-wide">
+        <h2 className="text-medium mb-3 font-semibold tracking-wide text-green-600">
           {destination.city}{" "}
           <span className="text-green-500">{destination.location}</span>
         </h2>
-        <div className="prose whitespace-pre-wrap text-sm text-green-800 tracking-wider text-justify">
+        <div className="prose whitespace-pre-wrap text-justify text-sm tracking-wider text-green-800">
           {destination.description}
         </div>
         <div className="mt-4">
           <StarRatings
             rating={destination.rating}
-            starRatedColor="yellow"
+            starRatedColor="#3B82F6"
             starDimension="20px"
             starSpacing="5px"
             numberOfStars={5}
@@ -45,11 +45,11 @@ export function DestinationIdRoute() {
           />
         </div>
         <div className="flex justify-between">
-          <p className="text-slate-800 font-semibold text-lg tracking-wide mt-4">
+          <p className="mt-4 text-lg font-semibold tracking-wide text-slate-800">
             {formatToRupiah(destination.price)}
           </p>
           <form>
-            <button className="bg-cyan-500 py-2.5 px-5 text-white rounded-lg hover:bg-cyan-700 mt-2">
+            <button className="mt-2 rounded-lg bg-cyan-500 py-2.5 px-5 text-white hover:bg-cyan-700">
               Favorite
             </button>
           </form>

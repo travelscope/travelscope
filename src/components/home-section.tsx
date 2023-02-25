@@ -2,13 +2,15 @@ export function HomeSection() {
   return (
     <section className="bg-[url('https://ik.imagekit.io/travelscopee/home-page-background.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676903839857')] bg-cover py-44 px-5 text-center">
       <div className="flex flex-col items-center">
-        <p className="max-w-lg text-xl font-semibold text-green-800 sm:text-2xl md:text-3xl">
+        <h1 className="max-w-lg text-2xl font-semibold text-green-800 sm:text-3xl md:max-w-2xl md:text-4xl">
           <span>Let's go find your favorite tourist spot with </span>
-          <strong className="font-bold text-cyan-500 ">TravelScope</strong>
-        </p>
-        <p className="mt-5 text-base text-green-800 sm:text-lg md:text-xl">
+          <strong className="font-bold text-cyan-500">TravelScope</strong>
+        </h1>
+
+        <h2 className="mt-5 text-base text-green-800 sm:text-lg md:text-xl">
           We are here to make your nice travel journey
-        </p>
+        </h2>
+
         <form method="get" action="/search" className="mt-8 flex" id="search">
           <input
             name="q"
