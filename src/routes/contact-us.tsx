@@ -20,7 +20,7 @@ export function ContactUsRoute() {
       <section className="mx-auto flex max-w-full items-center justify-between bg-teal-100 py-2.5">
         <div className="max-w-lg space-y-4">
           <h2 className="leading realxed max-w-sm pl-14 font-bold">
-            Cuntomer Cervice
+            Customer Cervice
           </h2>
           <p className="max-w-sm pl-14">
             Jl. BSD Grand Boulevard Jl. BSD Green Office Park No.Kel, Sampora,

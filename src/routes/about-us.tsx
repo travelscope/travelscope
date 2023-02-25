@@ -76,8 +76,8 @@ export function AboutUsRoute() {
         </div>
       </section>
 
-      <section>
-        <h3>Our Locations</h3>
+      <section className="text-center">
+        <h3 className="py-5 text-3xl">Our Locations</h3>
         <img src="/map-indonesia.png" alt="map indonesia" />
       </section>
     </div>
