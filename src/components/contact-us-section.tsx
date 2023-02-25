@@ -2,39 +2,40 @@ import { Link } from "react-router-dom";
 
 export function ContactUsSection() {
   return (
-    <section className="flex flex-col md:flex-row py-10 px-4 md:px-40 md:justify-between">
-      <div className="w-full md:w-1/2 mb-8 md:mb-0">
+    <section className="flex flex-col py-10 px-4 md:flex-row md:justify-between md:px-40">
+      <div className="mb-8 w-full md:mb-0 md:w-1/2">
         <img src="/footer-logo.png" alt="Footer Logo" className="mb-4" />
         <p className="text-green-800">
-          Copyright 2023 <span className="font-semibold">TravelScope</span>. All
-          right reserved
+          Copyright &copy; 2023{" "}
+          <span className="font-semibold">TravelScope</span>. All rights
+          reserved.
         </p>
       </div>
-      <div className="w-full md:w-1/4 mb-8 md:mb-0">
-        <p className="font-semibold text-green-800 text-xl">Quick Links</p>
+      <div className="mb-8 w-full md:mb-0 md:w-1/4">
+        <p className="text-xl font-semibold text-green-800">Sitemap</p>
         <ul className="mt-4">
           <li className="text-base text-green-800">
-            <Link to={"/"}>HOME</Link>
+            <Link to={"/"}>Home</Link>
           </li>
           <li className="text-base text-green-800">
-            <Link to={"/explore"}>EXPLORE</Link>
+            <Link to={"/explore"}>Explore</Link>
           </li>
           <li className="text-base text-green-800">
-            <Link to={"/about-us"}>ABOUT US</Link>
+            <Link to={"/about-us"}>About Us</Link>
           </li>
           <li className="text-base text-green-800">
-            <Link to={"/contact-us"}>CONTACT US</Link>
+            <Link to={"/contact-us"}>Contact Us</Link>
           </li>
         </ul>
       </div>
-      <div className="w-full md:w-1/4 mb-8 md:mb-0">
-        <p className="font-semibold text-green-800 text-xl">Contact Us</p>
-        <ul className="mt-4">
+      <div className="mb-8 w-full md:mb-0 md:w-1/4">
+        <p className="text-xl font-semibold text-green-800">Contact Us</p>
+        <ul className="mt-4 space-y-2">
           <li className="text-green-800">
             Jl. BSD Grand Boulevard Jl. BSD Green Office Park No.Kel, Sampora,
             Kec. Cisauk, Kabupaten Tangerang, Banten
           </li>
-          <li className="font-semibold text-green-800">0812-6666-6666 </li>
+          <li className="font-semibold text-green-800">+62-812-3456-7890</li>
           <li className="font-semibold text-green-800">
             travelscope21@gmail.com{" "}
           </li>

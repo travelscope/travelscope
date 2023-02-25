@@ -24,7 +24,7 @@ export function DestinationIdRoute() {
           alt={"img-" + destination.name}
           className="h-52 w-full rounded object-cover"
         />
-        <h1 className="mt-5 text-xl font-semibold  text-green-800">
+        <h1 className="mt-5 text-3xl font-semibold  text-green-800">
           {destination.name}
         </h1>
         <h2 className="text-medium mb-3 font-semibold  text-green-600">
@@ -46,7 +46,7 @@ export function DestinationIdRoute() {
         </div>
         <div className="flex justify-between">
           <p className="mt-4 text-lg font-semibold  text-slate-800">
-            {formatToRupiah(destination.price)}
+            Around {formatToRupiah(destination.price)}/pax for activities
           </p>
           <form>
             <button className="rounded-lg bg-white p-2.5 text-red-500 hover:border-white hover:bg-red-500 hover:text-white">

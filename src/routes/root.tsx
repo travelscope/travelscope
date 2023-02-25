@@ -1,5 +1,6 @@
+import { Outlet, ScrollRestoration } from "react-router-dom";
+
 import { Navbar } from "../components/navbar";
-import { Outlet } from "react-router-dom";
 import { ContactUsSection } from "../components/contact-us-section";
 
 export function RootRoute() {
@@ -14,6 +15,8 @@ export function RootRoute() {
       <footer>
         <ContactUsSection />
       </footer>
+
+      <ScrollRestoration />
     </div>
   );
 }

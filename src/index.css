@@ -10,4 +10,16 @@
     background-position: center center;
     background-repeat: no-repeat;
   }
+
+  .home-page-cover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)
+      ),
+      url("/home-page-cover.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 }

@@ -29,7 +29,7 @@ function Card({ destination }: { destination: ResourceDestination }) {
           />
         </div>
         <p className="mt-4 text-lg font-semibold  text-slate-800">
-          {formatToRupiah(destination.price)}
+          {formatToRupiah(destination.price)}/pax
         </p>
       </div>
       <div className="flex-end flex justify-between">
