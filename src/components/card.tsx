@@ -1,13 +1,7 @@
 import { Link } from "react-router-dom";
 import { ResourceDestination } from "../api/destinations";
+import { formatToRupiah } from "../libs/format-currency";
 import StarRatings from "react-star-ratings";
-
-const formatToRupiah = (num: number): string => {
-  return new Intl.NumberFormat("id-ID", {
-    style: "currency",
-    currency: "IDR",
-  }).format(num);
-};
 
 function Card({ destination }: { destination: ResourceDestination }) {
   return (
