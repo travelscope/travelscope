@@ -1,19 +1,13 @@
 import { LoaderFunctionArgs, useLoaderData } from "react-router-dom";
-
 import { apiGetDestinationById } from "../../api/destinations";
+import { formatToRupiah } from "../../libs/format-currency";
 import { MapEmbed } from "../../components/map-embed";
+import StarRatings from "react-star-ratings";
 
 export async function loader({ params }: LoaderFunctionArgs) {
   const destination = await apiGetDestinationById(String(params.destinationId));
   return { destination };
 }
-
-const formatToRupiah = (num: number): string => {
-  return new Intl.NumberFormat("id-ID", {
-    style: "currency",
-    currency: "IDR",
-  }).format(num);
-};
 
 export function DestinationIdRoute() {
   const { destination } = useLoaderData() as Awaited<ReturnType<typeof loader>>;
@@ -23,21 +17,35 @@ export function DestinationIdRoute() {
   }
 
   return (
-    <div className="flex items-start justify-between mt-16">
+    <div className="flex flex-col md:flex-row items-start justify-between mt-16">
       <div className="p-5">
         <img
           src={destination.image}
           alt={"img-" + destination.name}
           className="rounded object-cover h-52 w-full"
         />
-        <h4 className="font-semibold text-green-800 text-xl mb-2 mt-2">
+        <h1 className="text-green-800 mt-5 font-semibold text-xl tracking-wide">
           {destination.name}
-        </h4>
-        <div className="prose whitespace-pre-wrap text-sm text-green-800 text-justify">
+        </h1>
+        <h2 className="text-green-600 mb-3 font-semibold text-medium tracking-wide">
+          {destination.city}{" "}
+          <span className="text-green-500">{destination.location}</span>
+        </h2>
+        <div className="prose whitespace-pre-wrap text-sm text-green-800 tracking-wider text-justify">
           {destination.description}
-        </div>{" "}
+        </div>
+        <div className="mt-4">
+          <StarRatings
+            rating={destination.rating}
+            starRatedColor="yellow"
+            starDimension="20px"
+            starSpacing="5px"
+            numberOfStars={5}
+            name="rating"
+          />
+        </div>
         <div className="flex justify-between">
-          <p className="text-m font-medium mt-4">
+          <p className="text-slate-800 font-semibold text-lg tracking-wide mt-4">
             {formatToRupiah(destination.price)}
           </p>
           <form>

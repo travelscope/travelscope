@@ -14,8 +14,8 @@ export type ResourceDestination = {
 
   city: string;
   location?: string;
-  latitude?: number;
-  longitude?: number;
+  latitude: number;
+  longitude: number;
 };
 
 export type ResourceDestinations = ResourceDestination[];
