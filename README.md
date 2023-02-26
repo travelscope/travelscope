@@ -28,4 +28,4 @@ Figma file: <https://figma.com/file/DntDIGr23JZzRjjBflxBLH/TeavelScope>
 - <https://travelscope.frarif.com>
 - <https://travelscope.rofiqahmad.com>
 - <https://travelscope.muhfarkhans.com>
-- <https://travelscope.karim.com>
+- <https://travelscope.karimhasibuan.com>
